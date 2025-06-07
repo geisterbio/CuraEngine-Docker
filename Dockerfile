@@ -52,3 +52,6 @@ ADD /server /server
 RUN apt install -y nodejs
 ARG CACHE_DATE=2016-01-01
 RUN cd server && npm install
+
+# Start Node.js server
+CMD ["node", "./server/server.js"]
